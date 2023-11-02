@@ -494,6 +494,29 @@
                  "width":198.995746100592,
                  "x":765.368254233047,
                  "y":220.508799733089
+                }, 
+                {
+                 "height":0,
+                 "id":21,
+                 "name":"linkbuehne",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"default",
+                         "type":"string",
+                         "value":"https:\/\/teams.microsoft.com\/convene\/meetings?url=\/l\/meetup-join\/19%3ameeting_YWUyYTQ4MDMtZmQwNC00ODNkLTljNDctZDUzNTU1NWJhMzVi%40thread.v2\/0?context=%7B%22Tid%22%3A%22a1a72d9c-49e6-4f6d-9af6-5aafa1183bfd%22%2C%22Oid%22%3A%224947e9f6-752d-4c4c-8b53-79b5d0bed848%22%2C%22IsBroadcastMeeting%22%3Atrue%2C%22role%22%3A%22a%22%7D&btype=a&role=a"
+                        }, 
+                        {
+                         "name":"label",
+                         "type":"string",
+                         "value":"Link Buehne"
+                        }],
+                 "rotation":0,
+                 "type":"variable",
+                 "visible":true,
+                 "width":0,
+                 "x":865.486696138127,
+                 "y":239.539577946451
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -576,7 +599,7 @@
          "y":0
         }],
  "nextlayerid":64,
- "nextobjectid":21,
+ "nextobjectid":22,
  "orientation":"orthogonal",
  "properties":[
         {
