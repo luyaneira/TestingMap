@@ -517,6 +517,28 @@
                  "width":0,
                  "x":865.486696138127,
                  "y":239.539577946451
+                }, 
+                {
+                 "height":132.801833514055,
+                 "id":22,
+                 "name":"ChatZoneSub",
+                 "properties":[
+                        {
+                         "name":"chatDescription",
+                         "type":"string",
+                         "value":"Hier kannst du deine Fragen zum Livestream auf der Nebenb\u00fchne loswerden"
+                        }, 
+                        {
+                         "name":"chatName",
+                         "type":"string",
+                         "value":"SubstageChat"
+                        }],
+                 "rotation":0,
+                 "type":"area",
+                 "visible":true,
+                 "width":198.996,
+                 "x":28.7528966552673,
+                 "y":93.7058477771291
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -599,7 +621,7 @@
          "y":0
         }],
  "nextlayerid":64,
- "nextobjectid":22,
+ "nextobjectid":23,
  "orientation":"orthogonal",
  "properties":[
         {

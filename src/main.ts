@@ -19,6 +19,22 @@ WA.onInit().then(() => {
 
     WA.room.area.onLeave('clock').subscribe(closePopup)
 
+    WA.room.area.onEnter("ChatZone").subscribe(() => {
+        WA.chat.open();
+    });
+
+    WA.room.area.onLeave("ChatZone").subscribe(() => {
+        WA.chat.close();
+    });
+
+    WA.room.area.onEnter("ChatZoneSub").subscribe(() => {
+        WA.chat.open();
+    });
+
+    WA.room.area.onLeave("ChatZoneSub").subscribe(() => {
+        WA.chat.close();
+    });
+
     // The line below bootstraps the Scripting API Extra library that adds a number of advanced properties/features to WorkAdventure
     bootstrapExtra().then(() => {
         console.log('Scripting API Extra ready');
