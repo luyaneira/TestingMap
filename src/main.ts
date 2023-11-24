@@ -5,11 +5,23 @@ import { bootstrapExtra } from "@workadventure/scripting-api-extra";
 console.log('Script started successfully');
 
 let currentPopup: any = undefined;
+var startMsg = "Willkommen beim Adventskalender Inklusion@DB!\n\nErkunde unsere durchlaufbaren Adventskalender mit deinem Avatar (du bewegst dich mit den PFEILTASTEN)\n Jeden Tag öffnet sich eine neue Tür, hinter der sich spannende Impulse zum Thema Inklusion verbergen\n";
+var popUpStart = "popUpStart";
 
 // Waiting for the API to be ready
 WA.onInit().then(() => {
     console.log('Scripting API ready');
     console.log('Player tags: ',WA.player.tags)
+
+    currentPopup =  WA.ui.openPopup(popUpStart, startMsg,[
+        {
+            label: "OK",
+            callback: (popup) => {
+                popup.close();
+                currentPopup = undefined;
+            }
+        }]
+    );
 
     WA.room.area.onEnter('clock').subscribe(() => {
         const today = new Date();
